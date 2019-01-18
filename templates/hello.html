@@ -1,0 +1,17 @@
+
+{% extends "base.html" %}
+
+
+
+{% block main_body %}
+<p>this is new main_body</p>
+    {% if is_show %}
+        <title>django test</title>
+    {% endif %}
+<ul>
+    {% for name in friends_names %}
+        <li> {{ name }} </li>
+    {% endfor %}
+
+    </ul>
+{% endblock %}
